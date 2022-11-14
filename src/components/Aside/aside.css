@@ -1,0 +1,65 @@
+aside {
+    max-width: 35%;
+}
+
+aside > ul,
+aside > ul > a > li,
+aside > ul > a {
+    display: flex;
+}
+
+aside > ul > li {
+    width: 100%;
+}
+
+aside > ul {
+    flex-direction: column;
+}
+
+aside > ul, aside > ul > a > li {
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+aside > ul, aside > a > li {
+    list-style: none;
+}
+
+aside > ul > a > li > ion-icon {
+    font-size: 1.2rem;
+    min-width: 10%;
+    margin: auto;
+}
+
+aside > ul > a > li > p {
+    font-size: 1.1rem;
+    max-width: 90%;
+}
+
+aside > ul > a {
+    flex-direction: row;
+    color: #313131;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+a, ul {
+    width: 100% !important;
+}
+
+@media only screen and (max-width: 811px) {
+    aside {
+        max-width: 7.5%;
+    }
+    aside > ul > a > li > p {
+        display: none;
+    }
+    aside > ul {
+        height: 100%;
+        justify-content: space-evenly;
+    }
+    .container-router {
+        min-width: 90%;
+    }
+}

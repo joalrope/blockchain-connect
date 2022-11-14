@@ -1,0 +1,23 @@
+header {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    height: 10%;
+    width: 100%;
+    color: #313131;
+    font-weight: bolder;
+}
+
+[class*="toggle-mode-div light"] > ion-icon {
+    color: #26418f !important;
+}
+
+[class*="toggle-mode-div"] > ion-icon {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
+
+[class*="toggle-mode-div dark"] > ion-icon {
+    color: yellow;
+}
