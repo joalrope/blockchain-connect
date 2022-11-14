@@ -12,6 +12,8 @@ function Transactions ()
     const [ walletsTemp, setWalletsTemp ] = useState( [] );
 
     const privateKey = import.meta.env.VITE_PRIVATE_KEY;
+    // set in .env file
+    // VITE_PRIVATE_KEY = "E07FA44D864D5EC8DFF590C65E36029E28513DC2AF6CB345C772FFC857926DEC"
     const url = 'https://gestorpayments.herokuapp.com/';
     const headers = { 'Content-type': 'application/json' };
 
